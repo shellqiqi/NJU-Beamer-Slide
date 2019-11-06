@@ -1,5 +1,5 @@
-xelatex SEU_BeamerTemplate &
-xelatex SEU_BeamerTemplate
+xelatex NJU_BeamerTemplate &
+xelatex NJU_BeamerTemplate
 del *.aux /s
 del *.bak /s
 del *.log /s
