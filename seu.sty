@@ -52,12 +52,12 @@
 %%%
 
 % Background
-\pgfdeclareimage[width=\paperwidth,height=\paperheight]{bg}{source/seu_background.png}
+\pgfdeclareimage[width=\paperwidth,height=\paperheight]{bg}{source/nju_background.png}
 \setbeamertemplate{background}{\pgfuseimage{bg}}
 
 % Colors
 % \usecolortheme[RGB={182,11,45}]{structure} %Red
-\usecolortheme[RGB={99,6,95}]{structure} %SEU
+\usecolortheme[RGB={106,0,95}]{structure} %NJU
 
 \setbeamercolor{frametitle}{parent=subsection in head/foot}
 \setbeamercolor{frametitle right}{parent=section in head/foot}
@@ -97,21 +97,21 @@
   \leavevmode%
   \@tempdimb=6.4375ex%
     %\multiply\@tempdimb by\beamer@sectionmax%
-    \pgfdeclareimage[height=.85\@tempdimb]{logo}{source/seu_logo.png}%
-    \pgfdeclareimage[height=.9\@tempdimb]{title_logo}{source/seu_title.png}%
+    \pgfdeclareimage[height=.85\@tempdimb]{logo}{source/nju_logo.png}%
+    \pgfdeclareimage[height=.9\@tempdimb]{title_logo}{source/nju_title.png}%
   \logo{\pgfuseimage{logo}}%
   \ifdim\@tempdimb>0pt%
     \advance\@tempdimb by 1.125ex%
-    \begin{beamercolorbox}[wd=.8\paperwidth,ht=\@tempdimb]{section in head/foot}%
+    \begin{beamercolorbox}[wd=.83\paperwidth,ht=\@tempdimb]{section in head/foot}%
       \vbox to\@tempdimb{\vfil\insertsectionnavigationhorizontal{.5\textwidth}{\hskip0pt plus1filll}{}\vfil}%
     \end{beamercolorbox}%
     %% \begin{beamercolorbox}[wd=.4\paperwidth,ht=\@tempdimb,center]{subsection in head/foot}%
     %%   \vbox to\@tempdimb{\vfil\textbf{\footnotesize\insertshortinstitute~~}\vfil}%
     %% \end{beamercolorbox}%
-    \begin{beamercolorbox}[wd=.135\paperwidth,ht=\@tempdimb,center]{subsection in head/foot}%
+    \begin{beamercolorbox}[wd=.12\paperwidth,ht=\@tempdimb,center]{subsection in head/foot}%
       \vbox to\@tempdimb{\vfil\pgfuseimage{title_logo}\vfil}%
     \end{beamercolorbox}%
-    \begin{beamercolorbox}[wd=.065\paperwidth,ht=\@tempdimb,center]{subsection in head/foot}%
+    \begin{beamercolorbox}[wd=.05\paperwidth,ht=\@tempdimb,center]{subsection in head/foot}%
       \vbox to\@tempdimb{\vfil\insertlogo\vfil\vfil}%
     \end{beamercolorbox}%
   \fi%
